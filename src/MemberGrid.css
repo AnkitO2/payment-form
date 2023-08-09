@@ -1,0 +1,19 @@
+.RowOne-ColOne {
+    background-color: rgb(129, 192, 75);
+  }
+   
+  body {
+    font-family: "Montserrat";
+  }
+  
+  .Invite-button {
+    border-radius: 5px;
+  }
+  h6 {
+    font-weight: bold;
+  }
+  button {
+    padding: 4px 20px;
+    border-radius: 5px;
+  }
+  

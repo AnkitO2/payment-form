@@ -1,0 +1,134 @@
+.heading-Members {
+    font-size: 100px;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  h6{
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .emman-thoma{
+    font-size: 12px;
+    font-weight: 300;
+  }
+  /*** First DiV CSS***/
+  .Parent-divNo-One {
+    justify-content: space-between;
+    display: flex;
+  }
+  .ChildOne-divNo-One {
+    width: 45%;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(242, 243, 236);
+  }
+  
+  .ChildOne-divNo-One:hover {
+    background-color: #81c14b;
+    color: white;
+  }
+  
+  .active {
+    background-color: #81c14b;
+    color: white;
+  }
+  
+  .ChildOne-divNo-One p {
+    font-size: 10px;
+    font-weight:bold;
+  }
+  /* .ChildTwo-divNo-One {
+    width: 47%;
+    border-radius: 5px;
+    text-align: center;
+  } */
+  /* .ChildTwo-divNo-One p {
+    font-size: 14px;
+    font-weight: 500px;
+  } */
+  /***Second Div CSS***/
+  .Parent-divNo-Two {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* .ChildOne-divNo-Two {
+    width: 47%;
+    border-radius: 5px;
+    text-align: center;
+  } */
+  /* .ChildOne-divNo-Two p {
+    font-size: 14px;
+    font-weight: 500px;
+  } */
+  /* .ChildTwo-divNo-Two {
+    width: 47%;
+    border-radius: 5px;
+    text-align: center;
+  } */
+  /* .ChildTwo-divNo-Two p {
+    font-size: 14px;
+    font-weight: 500px;
+  } */
+  /***Third Div CSS***/
+  .Parent-divNo-Three {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  
+  button {
+    padding: 2px 18px;
+    border-radius: 5px;
+    font-size: 10px;
+  }
+  /***Fourth Div CSS***/
+  .Parent-divNo-Four {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  /***Fifth Div CSS ***/
+  .Parent-divNo-Five {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  /***Sixth Div CSS ***/
+  .Parent-divNo-Six {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  /***Seventh Div CSS ***/
+  .Parent-divNo-Seven {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  .Follower {
+    font-size: 13px;
+    font-weight: 300;
+  }
+  .Follower-Paragraph {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  
+  .tabColor:hover {
+    background-color: #81c14b;
+    color: white;
+  }
+  
+  .tabColor {
+    background-color: rgb(236, 236, 236);
+    border: 1px solid rgb(228, 228, 228);
+  }
+  .dot {
+    font-size: 35px;
+    font-weight: 300;
+  }
+  
