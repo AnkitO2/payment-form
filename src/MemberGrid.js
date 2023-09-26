@@ -13,7 +13,7 @@ function Example(args) {
       <Button color="danger" onClick={toggle}>
         Click Me
       </Button>
-      <Modal isOpen={modal} toggle={toggle} >
+      <Modal isOpen={modal} toggle={toggle}>
         <ModalHeader toggle={toggle}>Members</ModalHeader>
         <ModalBody className="shadow w-100">
           <Row className="d-flex grid gap-3 text-center mb-3">
@@ -44,7 +44,6 @@ function Example(args) {
           <Row className=" d-flex justify-content-between">
             <Col className=" ">
               <div className="d-flex grid gap-3  align-items-center ">
-               
                 <div className="align-items-center text-center">
                   <h6 className="mb-0">EmmanThoma</h6>
                   <p>EmmanThoma</p>
@@ -65,9 +64,7 @@ function Example(args) {
           <Row className="d-flex justify-content-between">
             <Col>
               <div className="d-flex grid gap-3 align-items-center ">
-                <div>
-                 
-                </div>
+                <div></div>
                 <div>
                   <h6 className="mb-0">Jesindapeter</h6>
                   <p>EmmanThoma</p>
@@ -89,9 +86,7 @@ function Example(args) {
           <Row className="d-flex justify-content-between">
             <Col>
               <div className="d-flex grid gap-3 align-items-center ">
-                <div>
-                
-                </div>
+                <div></div>
                 <div>
                   <h6 className="mb-0">LinaMercery</h6>
                   <p>EmmanThoma</p>
@@ -113,9 +108,7 @@ function Example(args) {
           <Row className="d-flex justify-content-between">
             <Col>
               <div className="d-flex grid gap-3 align-items-center ">
-                <div>
-                
-                </div>
+                <div></div>
                 <div>
                   <h6 className="mb-0">lassiQueen</h6>
                   <p>EmmanThoma</p>
@@ -136,9 +129,7 @@ function Example(args) {
           <Row className="d-flex justify-content-between">
             <Col>
               <div className="d-flex grid gap-3 align-items-center ">
-                <div>
-                 
-                </div>
+                <div></div>
                 <div>
                   <h6 className="mb-0">Johnpeter</h6>
                   <p>EmmanThoma</p>
