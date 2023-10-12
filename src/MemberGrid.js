@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import "./MemberGrid.css";
-
-import { Button, Modal, ModalHeader, ModalBody, Col, Row } from "reactstrap";
+import {
+  Button,
+  Modal,
+  ModalHeader,
+  ModalBody,
+  Col,
+  Row,
+  Container,
+} from "reactstrap";
 
 function Example(args) {
   const [modal, setModal] = useState(false);
@@ -9,9 +16,9 @@ function Example(args) {
   const toggle = () => setModal(!modal);
 
   return (
-    <div>
+    <Container>
       <Button color="danger" onClick={toggle}>
-        Click Me
+        Click You
       </Button>
       <Modal isOpen={modal} toggle={toggle}>
         <ModalHeader toggle={toggle}>Members</ModalHeader>
@@ -148,7 +155,7 @@ function Example(args) {
           </Row>
         </ModalBody>
       </Modal>
-    </div>
+    </Container>
   );
 }
 

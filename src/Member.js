@@ -1,5 +1,13 @@
 import React, { useState } from "react";
-import { Button, Modal, ModalHeader, ModalBody } from "reactstrap";
+import {
+  Button,
+  Modal,
+  ModalHeader,
+  ModalBody,
+  Row,
+  Col,
+  Container,
+} from "reactstrap";
 // import MemberLogo from "./Memberlogo/Ankit1.jpg";
 import "./Member.css";
 function Example(args) {
@@ -10,53 +18,51 @@ function Example(args) {
   const [tab, setTab] = useState(1);
 
   return (
-    <div>
+    <Container>
       <Button color="danger" onClick={toggle}>
         Click Me
       </Button>
+      <Row> </Row>
       <Modal isOpen={modal} toggle={toggle}>
         <ModalHeader toggle={toggle}>
           <h6>Members</h6>
         </ModalHeader>
         <ModalBody className="bg-transparent">
-          <div className="Parent-divNo-One ">
-            <div
+          <Row className="Parent-divNo-One ">
+            <Col
               className={`ChildOne-divNo-One ${tab === 1 ? "active" : ""}`}
               onClick={() => setTab(1)}
             >
               <p className="m-0 py-1 ">05</p>
               <p className="py-0  mb-2 ">Invited</p>
-            </div>
-            <div
+            </Col>
+            <Col
               className={`ChildOne-divNo-One ${tab === 2 ? "active" : ""}`}
               onClick={() => setTab(2)}
             >
               <p className="m-0 py-1  ">05</p>
               <p className=" py-0 mb-2">Going</p>
-            </div>
-          </div>
-          <div className="Parent-divNo-Two">
-            <div
+            </Col>
+          </Row>
+          <Row className="Parent-divNo-Two">
+            <Col
               className={`ChildOne-divNo-One ${tab === 3 ? "active" : ""}`}
               onClick={() => setTab(3)}
             >
               <p className="m-0 py-1 ">05</p>
               <p className="py-0 mb-2">Interested</p>
-            </div>
-            <div
+            </Col>
+            <Col
               className={`ChildOne-divNo-One ${tab === 4 ? "active" : ""}`}
               onClick={() => setTab(4)}
             >
               <p className="m-0 py-1 ">05</p>
               <p className="py-0 mb-2">Not Interested</p>
-            </div>
-          </div>
+            </Col>
+          </Row>
 
-          <div className="Parent-divNo-Three border-bottom pt-3">
-            <div className="d-flex ">
-              <div>
-                {/* <img src={MemberLogo} className="rounded-circle" alt="Error" /> */}
-              </div>
+          <Row className="Parent-divNo-Three border-bottom pt-3">
+            <Col className="d-flex ">
               &nbsp;&nbsp;&nbsp;
               <div>
                 <h6 className="mb-0">EmmanThoma</h6>
@@ -66,27 +72,23 @@ function Example(args) {
                 </p>
               </div>
               <span className="d-flex align-items-end mb-2 dot">.</span>
-            </div>
+            </Col>
 
-            <div className="d-flex align-items-end">
+            <Col className="d-flex align-items-end">
               <p className="Follower-Paragraph">
                 <span className="fw-semibold Follower">18M</span> Posts
               </p>
-            </div>
+            </Col>
 
-            <div>
+            <Col>
               <button type="button" className="secondary border">
                 Invited
               </button>
-            </div>
-          </div>
+            </Col>
+          </Row>
 
-          <div className="Parent-divNo-Four border-bottom pt-3">
-            <div className="d-flex">
-              <div>
-                {/* <img src={MemberLogo} className="rounded-circle" alt="Error" /> */}
-              </div>
-              &nbsp;&nbsp;&nbsp;
+          <Row className="Parent-divNo-Four border-bottom pt-3">
+            <Col className="d-flex">
               <div>
                 <h6 className="mb-0">EmmanThoma</h6>
                 <p className="emman-thoma">emman-thoma</p>
@@ -95,26 +97,22 @@ function Example(args) {
                 </p>
               </div>
               <span className="d-flex align-items-end mb-2 dot">.</span>
-            </div>
+            </Col>
 
-            <div className="d-flex align-items-end">
+            <Col className="d-flex align-items-end">
               <p className="Follower-Paragraph">
                 <span className="fw-semibold Follower">18M</span> Posts
               </p>
-            </div>
-            <div>
+            </Col>
+            <Col>
               <button type="button" className="secondary border">
                 Invited
               </button>
-            </div>
-          </div>
+            </Col>
+          </Row>
 
-          <div className="Parent-divNo-Five border-bottom pt-3">
-            <div className="d-flex">
-              <div>
-                {/* <img src={MemberLogo} className="rounded-circle" alt="Error" /> */}
-              </div>
-              &nbsp;&nbsp;&nbsp;
+          <Row className="Parent-divNo-Five border-bottom pt-3">
+            <Col className="d-flex">
               <div>
                 <h6 className="mb-0">EmmanThoma</h6>
                 <p className="emman-thoma">emman-thoma</p>
@@ -123,78 +121,67 @@ function Example(args) {
                 </p>
               </div>
               <span className="d-flex align-items-end mb-2 dot">.</span>
-            </div>
+            </Col>
 
-            <div className="d-flex align-items-end">
+            <Col className="d-flex align-items-end">
               <p className="Follower-Paragraph">
                 <span className="fw-semibold  Follower">18M</span> Posts
               </p>
-            </div>
-            <div>
+            </Col>
+            <Col>
               <button type="button" className="secondary border">
                 Invited
               </button>
-            </div>
-          </div>
+            </Col>
+          </Row>
 
-          <div className="Parent-divNo-Six border-bottom pt-3">
-            <div className="d-flex">
-              <div>
-                {/* <img src={MemberLogo} className="rounded-circle" alt="Error" /> */}
-              </div>
-              &nbsp;&nbsp;&nbsp;
-              <div>
-                <h6 className="mb-0">EmmanThoma</h6>
-                <p className="emman-thoma">emman-thoma</p>
-                <p className="Follower-Paragraph">
-                  <span className="fw-semibold Follower">9.8M</span> Followers
-                </p>
-              </div>
+          <Row className="Parent-divNo-Six border-bottom pt-3">
+            <Col className="d-flex">
+              <h6 className="mb-0">EmmanThoma</h6>
+              <p className="emman-thoma">emman-thoma</p>
+              <p className="Follower-Paragraph">
+                <span className="fw-semibold Follower">9.8M</span> Followers
+              </p>
+
               <span className="d-flex align-items-end mb-2 dot">.</span>
-            </div>
+            </Col>
 
-            <div className="d-flex align-items-end">
+            <Col className="d-flex align-items-end">
               <p className="Follower-Paragraph">
                 <span className="fw-semibold Follower">18M</span> Posts
               </p>
-            </div>
-            <div>
+            </Col>
+            <Col>
               <button type="button" className=" secondary border">
                 Invited
               </button>
-            </div>
-          </div>
+            </Col>
+          </Row>
 
-          <div className="Parent-divNo-Seven mb-0 border-bottom pt-3">
-            <div className="d-flex">
-              <div>
-                {/* <img src={MemberLogo} className="rounded-circle" alt="Error" /> */}
-              </div>
-              &nbsp;&nbsp;&nbsp;
-              <div className="">
-                <h6 className="mb-0">EmmanThoma</h6>
-                <p className="emman-thoma">emman-thoma</p>
-                <p className="Follower-Paragraph">
-                  <span className="fw-semibold Follower">9.8M</span> Followers
-                </p>
-              </div>
+          <Row className="Parent-divNo-Seven mb-0 border-bottom pt-3">
+            <Col className="d-flex">
+              <h6 className="mb-0">EmmanThoma</h6>
+              <p className="emman-thoma">emman-thoma</p>
+              <p className="Follower-Paragraph">
+                <span className="fw-semibold Follower">9.8M</span> Followers
+              </p>
               <span className="d-flex align-items-end mb-2 dot">.</span>
-            </div>
+            </Col>
 
-            <div className="d-flex align-items-end">
+            <Col className="d-flex align-items-end">
               <p className="Follower-Paragraph">
                 <span className="fw-semibold Follower">18M</span> Posts
               </p>
-            </div>
-            <div>
+            </Col>
+            <Col>
               <button type="button" className=" secondary border">
                 Invited
               </button>
-            </div>
-          </div>
+            </Col>
+          </Row>
         </ModalBody>
       </Modal>
-    </div>
+    </Container>
   );
 }
 
